@@ -1,13 +1,13 @@
 defmodule FeederEx do
   defmodule Feed do
     defstruct author: nil, id: nil, image: nil, link: nil, language: nil,
-      subtitle: nil, summary: nil, title: nil, updated: nil, entries: []
+      subtitle: nil, summary: nil, title: nil, published: nil, updated: nil, entries: []
   end
 
   defmodule Entry do
     defstruct  author: nil, duration: nil, enclosure: nil, id: nil,
       image: nil, link: nil, subtitle: nil, summary: nil, title: nil,
-      updated: nil, published: nil
+      published: nil, updated: nil
   end
 
   defmodule Enclosure do

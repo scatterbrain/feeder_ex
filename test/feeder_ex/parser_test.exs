@@ -12,6 +12,7 @@ defmodule FeederEx.ParserExTest do
         "the subtitle",
         "the summary",
         "the title",
+        "the published date",
         "the updated date"
     }
     {feed, :entries} = FeederEx.Parser.event({:feed, event_data}, {nil, :entries})
@@ -39,6 +40,7 @@ defmodule FeederEx.ParserExTest do
         "the subtitle",
         "the summary",
         "the title",
+        "the published date",
         "the updated date"
     }
     entries = [:entry_1, :entry_2]
@@ -54,6 +56,7 @@ defmodule FeederEx.ParserExTest do
     assert entry.subtitle  == "the subtitle"
     assert entry.summary   == "the summary"
     assert entry.title     == "the title"
+    assert entry.published   == "the published date"    
     assert entry.updated   == "the updated date"
   end
 
@@ -69,6 +72,7 @@ defmodule FeederEx.ParserExTest do
         "the subtitle",
         "the summary",
         "the title",
+        "the published date",        
         "the updated date"
     }
     {:feed, [entry]} =

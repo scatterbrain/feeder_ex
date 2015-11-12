@@ -13,7 +13,7 @@ defmodule FeederExTest do
     assert feed.subtitle == nil
     assert feed.summary == "Liftoff to Space Exploration."
     assert feed.title == "Liftoff News"
-    assert feed.updated == "Tue, 10 Jun 2003 04:00:00 GMT"
+    assert feed.published == "Tue, 10 Jun 2003 04:00:00 GMT"
     assert length(feed.entries) == 4
 
     [entry | _] = feed.entries
@@ -26,7 +26,7 @@ defmodule FeederExTest do
     assert entry.subtitle == nil
     assert entry.summary == "How do Americans get ready to work with Russians aboard the International Space Station? They take a crash course in culture, language and protocol at Russia's <a href=\"http://howe.iki.rssi.ru/GCTC/gctc_e.htm\">Star City</a>."
     assert entry.title == "Star City"
-    assert entry.updated == "Tue, 03 Jun 2003 09:39:21 GMT"
+    assert entry.published == "Tue, 03 Jun 2003 09:39:21 GMT"
 
   end
 

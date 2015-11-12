@@ -1,1 +1,1 @@
-%{"feeder": {:hex, :feeder, "2.0.0"}}
+%{"feeder": {:git, "https://github.com/scatterbrain/feeder.git", "7f2a2eb49254b336ae4ecdc3bfd308d3f0153f0c", [branch: :master]}}

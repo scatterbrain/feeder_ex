@@ -26,7 +26,7 @@ defmodule FeederEx.Mixfile do
   #
   # Type `mix help deps` for more examples and options
   defp deps do
-    [{:feeder, "~> 2.0.0"}]
+    [{:feeder, github: "scatterbrain/feeder",  branch: :master}]
   end
 
   defp package do
